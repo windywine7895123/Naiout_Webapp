@@ -105,5 +105,8 @@
       }
     }
   },
-  "defaultProject": "naiout_webapp"
+  "defaultProject": "naiout_webapp",
+  "cli": {
+    "analytics": "4f178a5f-56fc-4e11-8ed3-05fed524bc32"
+  }
 }
