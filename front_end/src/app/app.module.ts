@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { DetailComponent } from './detail/detail.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { ListComponent } from './list/list.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { EditBookComponent } from './edit-book/edit-book.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,7 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { EditBookComponent } from './edit-book/edit-book.component';
+
 
 
 @NgModule({
