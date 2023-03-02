@@ -2,6 +2,10 @@ form {
     margin-top: 20px;
 }
 
-form .input {
-    margin-top: 1%;
+.form-group {
+    display: inline;
+}
+
+.form-control {
+    width: 70%;
 }

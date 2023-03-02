@@ -1,15 +1,80 @@
-<p>add-book works!</p>
 <button mat-raised-button>
     รายการหนังสือใหม่
 </button>
 
-<form>
-    <div class="form-group">
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr">
+<form class="form-horizontal">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">รหัสหนังสือ</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="focusedInput" type="text">
     </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd">
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">ชื่อหนังสือ</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="focusedInput" type="text">
     </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">รูปหนังสือ</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="focusedInput" type="text">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">ประเภทหนังสือ</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="sel1">
+        <option>--เลือกประเภทหนังสือ--</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">ชื่อผู้เขียน</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="focusedInput" type="text">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">สำนักพิมพ์</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="sel1">
+        <option>--เลือกสำนักพิมพ์--</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">จำนวน</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="focusedInput" type="text">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">ราคา</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="focusedInput" type="text">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">เรื่องย่อ</label>
+    <div class="col-sm-10">
+      <textarea class="form-control" rows="5" id="focusedInput" type="text"></textarea>
+    </div>
+  </div>
 </form>
