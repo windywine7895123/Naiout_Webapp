@@ -4,7 +4,7 @@ import { Observable, throwError } from 'rxjs';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 
 export class Book {
-  _id!: String;
+  id!: String;
   book_name!: String;
   book_price!: Number;
   book_writer!: String;

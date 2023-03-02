@@ -2,6 +2,9 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import { Router } from '@angular/router'
 import { CrudService } from '../service/crud.service';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { Location } from '@angular/common';
+import { Book } from '../service/crud.service';
+
 
 @Component({
   selector: 'app-add-book',
@@ -11,14 +14,19 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 export class AddBookComponent implements OnInit {
 
   bookForm: FormGroup;
+ 
 
   constructor(
     public formBuilder: FormBuilder,
     private router: Router,
     private ngZone: NgZone,
-    private crudService: CrudService
+    private crudService: CrudService,
+    private location: Location,
+    public book: Book
+
   ) { 
     this.bookForm = this.formBuilder.group({
+      book_id: [''],
       book_name: [''],
       book_image: [''],
       book_type: [''], 
@@ -34,16 +42,21 @@ export class AddBookComponent implements OnInit {
   }
   onSubmit(): any {
     this.crudService.AddBook(this.bookForm.value)
-    .subscribe(() =>{
-      console.log("Book added successfully");
-      this.ngZone.run(() => this.router.navigateByUrl('/list'))
-    }, (err) => {
-      console.log(err);
-    })
+      .subscribe(() =>{
+        console.log("Book added successfully");
+        this.ngZone.run(() => this.router.navigateByUrl('/list'))
+      }, (err) => {
+        console.log(err);
+      })
   }
-
-  goBack() {}
-
-  save() {}
+  goBack(): void {
+    this.location.back();
+  }
+  save(): void {
+    if (this.book) {
+      this.crudService.updateBook( this.book.id , this.book)
+        .subscribe(() => this.goBack());
+    }
+  }
 
 }
