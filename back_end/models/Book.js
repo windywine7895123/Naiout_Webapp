@@ -6,6 +6,7 @@ const BookSchema = new mongoose.Schema({
     book_writer: String,
     book_image: String,
     book_type: String,
+    book_item: String,
     book_publisher: String,
     book_detail: String,
     updated_at: { type: Date, default: Date.now }

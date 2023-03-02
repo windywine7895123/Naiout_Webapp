@@ -10,6 +10,7 @@ export class Book {
   book_writer!: String;
   book_image!: String;
   book_type!: String;
+  book_item!: String;
   book_publisher!: String;
   book_detail!: String;
 }
