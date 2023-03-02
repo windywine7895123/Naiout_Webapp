@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { PreviewBookComponent } from './preview-book/preview-book.component';
 
 
 
@@ -26,7 +27,8 @@ import { MatInputModule } from '@angular/material/input';
     DetailComponent,
     AddBookComponent,
     ListComponent,
-    EditBookComponent
+    EditBookComponent,
+    PreviewBookComponent
   ],
   imports: [
     BrowserModule,
