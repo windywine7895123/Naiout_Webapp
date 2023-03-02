@@ -10,31 +10,35 @@ router.get('/', (req, res, next) => {
     })
 })
 //get one
-router.get('/:id', (req, res, next) => {
+router.get('/detail/:id', (req, res, next) => {
     Book.findById(req.params.id, (err, post) => {
         if (err) return next(err);
         res.json(post);
     })
 })
 //post
-router.post('/', (req, res, next) => {
+router.post('/add-book', (req, res, next) => {
     Book.create(req.body, (err, post) => {
         if (err) return next(err);
         res.json(post);
     })
 })
 //put
-router.put('/:id', (req, res, next) => {
-    Book.findByIdAndUpdate(req.params.id, req.body, (err, post) => {
+router.put('/edit-book/:id', (req, res, next) => {
+    Book.findByIdAndUpdate(req.params.id, { $set: req.body}, (err, post) => {
         if (err) return next(err);
+            console.log(err)
         res.json(post);
+            console.log('Book Updated Successfully');
     })
 })
 //delete
-router.delete('/:id', (req, res, next) => {
+router.delete('/delete-book/:id', (req, res, next) => {
     Book.findByIdAndDelete(req.params.id, (err, post) => {
         if (err) return next(err);
-        res.json(post);
+        res.status(200).json({
+            msg: post
+        });
     })
 })
 

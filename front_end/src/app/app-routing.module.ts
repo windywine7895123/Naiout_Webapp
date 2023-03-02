@@ -7,7 +7,13 @@ import { AddBookComponent } from './add-book/add-book.component';
 import { ListComponent } from './list/list.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: 'detail', component: DetailComponent },
+  { path: 'list', component: ListComponent },
+  { path: 'add-book', component: AddBookComponent },
+  { path: 'edit-book/:id', component: DetailComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
