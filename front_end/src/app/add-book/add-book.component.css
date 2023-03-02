@@ -8,4 +8,11 @@ form {
 
 .form-control {
     width: 70%;
+    border-color: #714CAE;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.form-horizontal {
+    padding-left: 0%;
 }
