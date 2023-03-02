@@ -6,6 +6,7 @@ import { DetailComponent } from './detail/detail.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { ListComponent } from './list/list.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
+import { Router } from 'express';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
