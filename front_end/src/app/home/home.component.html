@@ -30,13 +30,13 @@
 </mat-grid-list>
 
 <h1 style="text-align: center;"> Search </h1>
-
+<div class="container1">
 <div class="books-menu">
     <a *ngFor="let book of Books" routerLink="/detail/{{book.id}}">
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="{{book.book_image}}"><br>
+            <img src="{{book.book_image}}" style="width:300px;height:300px;"><br>
           </div>
           <div class="flip-card-back">
             <br><i><u>{{book.book_name}}</u></i><br>
@@ -48,4 +48,5 @@
       </div>
     </a>
   </div>
+</div>
 <br><br><br>
