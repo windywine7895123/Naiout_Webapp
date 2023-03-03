@@ -6,3 +6,10 @@ h2{
     text-align: center;
     font-size: 25px;
 }
+mat-icon{
+    font-size: 45px;
+    color: #714CAE;
+}
+.num1{
+    text-align: center;
+}

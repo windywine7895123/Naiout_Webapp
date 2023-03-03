@@ -18,6 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { PreviewBookComponent } from './preview-book/preview-book.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatIconModule,
     MatInputModule,
     MatGridListModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

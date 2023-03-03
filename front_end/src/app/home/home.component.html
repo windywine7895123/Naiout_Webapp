@@ -16,6 +16,7 @@
             </div>
         </div>
     </ng-template> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="head">
     <span>หนังสือยอดนิยม</span>
 </div>
@@ -27,7 +28,6 @@
         <div ng-init="myVar = 'pic_angular.jpg'">
             <p>อันดับ 1</p>
             <!-- <img ng-src="{{book.book_image}}" routerLinkActive="active" routerLink="/detail/{{book.id}}"> -->
-            <img ng-scr="https://storage.naiin.com/system/application/bookstore/resource/product/202111/536298/1000244626_front_XXL.jpg?imgname=%E0%B8%AA%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3-%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%A1-2">
         </div>
     </mat-grid-tile>
     <mat-grid-tile>
@@ -43,9 +43,8 @@
         </div>
     </mat-grid-tile>
 </mat-grid-list>
+
 <h1 style="text-align: center;"> Search </h1>
-
-
 
 <body>
     <div id="search-component">
@@ -66,14 +65,46 @@
     </div>
     <!-- </div> -->
 </body>
-
-<body ng-app="">
-
+<mat-grid-list cols="5" >
+    <mat-grid-tile>
     <div ng-init="myVar = 'pic_angular.jpg'">
-        <h1>...</h1>
         <!-- <img ng-src="{{myVar}}"> -->
     </div>
+    <div routerLink="/detail">
+        <mat-icon>pageview</mat-icon>
+    </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div ng-init="myVar = 'pic_angular.jpg'">
+            <!-- <img ng-src="{{myVar}}"> -->
+        </div>
+        <div routerLink="/detail">
+            <mat-icon>pageview</mat-icon>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div ng-init="myVar = 'pic_angular.jpg'">
+            <!-- <img ng-src="{{myVar}}"> -->
+        </div>
+        <div routerLink="/detail">
+            <mat-icon>pageview</mat-icon>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div ng-init="myVar = 'pic_angular.jpg'">
+            <!-- <img ng-src="{{myVar}}"> -->
+        </div>
+        <div routerLink="/detail">
+            <mat-icon>pageview</mat-icon>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div ng-init="myVar = 'pic_angular.jpg'">
+            <!-- <img ng-src="{{myVar}}"> -->
+        </div>
+        <div routerLink="/detail">
+            <mat-icon>pageview</mat-icon>
+        </div>
+    </mat-grid-tile>
 
-    <p></p>
-
-</body>
+</mat-grid-list>
