@@ -1,0 +1,14 @@
+th {
+    text-align: center;
+    background-color: #af8ce9;
+    color: white;
+}
+/* table, th , td  {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+  } */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
