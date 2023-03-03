@@ -1,3 +1,39 @@
-<p>list works!</p>
-<h1>NaiOut</h1>
-<p>hello</p>
+<div class="container mt-3">
+    <div
+        class="d-flex justify-content between flex.wrap flex-md-nowrap align-items-cemter pt-2 pb-2 mb-3 border-bottom">
+        <button type="button" class="btn btn-default"  routerLink="/add-book" >รายการหนังสือใหม่</button>
+    </div>
+</div>
+<div class="table-responsive">
+    <table class="table table-border">
+        <thead>
+            <tr>
+                <th scope="col">ลำดับที่</th>
+                <th scope="col">รหัสหนังสือ</th>
+                <th scope="col">ชื่อหนังสือ</th>
+                <th scope="col">ประเภทหนังสือ</th>
+                <th scope="col">ชื่อผู้เขียน</th>
+                <th scope="col">สำนักพิมพ์</th>
+                <th scope="col">จำนวน</th>
+                <th scope="col">ราคา</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of Books; let i = index">
+                <th scope="row">{{i}}</th>
+                <td>{{book.id}}</td>
+                <td>{{book.book_name}}</td>
+                <td>{{book.book_type}}</td>
+                <td>{{book.book_writer}}</td>
+                <td>{{book.book_publisher}}</td>
+                <td>{{book.book_item}}</td>
+                <td>{{book.book_price}}</td>
+                <td class="text-center">
+                    <button mat-flat-button color="primary" routerLink="/edit-book/{{book.id}}">แก้ไข</button>
+                    <button mat-flat-button color="danger" (click)="delete(book.id, i)">ลบ</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

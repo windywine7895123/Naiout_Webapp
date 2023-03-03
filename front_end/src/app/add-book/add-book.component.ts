@@ -26,7 +26,7 @@ export class AddBookComponent implements OnInit {
 
   ) { 
     this.bookForm = this.formBuilder.group({
-      book_id: [''],
+      id: [''],
       book_name: [''],
       book_image: [''],
       book_type: [''], 
@@ -46,7 +46,7 @@ export class AddBookComponent implements OnInit {
         console.log("Book added successfully");
         this.ngZone.run(() => this.router.navigateByUrl('/list'))
       }, (err) => {
-        console.log(err);
+        console.log(err)
       })
   }
   goBack(): void {
