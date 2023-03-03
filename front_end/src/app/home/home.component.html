@@ -1,21 +1,3 @@
-<!-- <ng-template class="header">
-        <h1>หนังสือยอดนิยม</h1>
-    </ng-template>
-    <ng-template let-product pTemplate="item">
-        <div class="book-item">
-            <div class="book-item-content">
-                <div class="p-mb-3">
-                    <img src="{{product.image}}" [alt]="product.name" class="product-image" routerLink="/detail/{{product.id}}" />
-                </div>
-                <div>
-                    <h3 class="p-mb-1" routerLink="/detail/{{product.id}}">{{product.name}}</h3>
-                    <div class="car-buttons p-mt-5">
-                        <p-button id="info" label="Detail" icon="pi pi-search" styleClass="p-button-rounded" routerLink="/detail/{{product.id}}"></p-button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </ng-template> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="head">
     <span>หนังสือยอดนิยม</span>
@@ -27,18 +9,21 @@
     <mat-grid-tile>
         <div ng-init="myVar = 'pic_angular.jpg'">
             <p>อันดับ 1</p>
+            <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202111/536298/1000244626_front_XXL.jpg?imgname=%E0%B8%AA%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3-%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%A1-2" alt="book" width="250" height="300">
             <!-- <img ng-src="{{book.book_image}}" routerLinkActive="active" routerLink="/detail/{{book.id}}"> -->
         </div>
     </mat-grid-tile>
     <mat-grid-tile>
         <div ng-init="myVar = 'pic_angular.jpg'">
             <p>อันดับ 2</p>
+            <img src="https://images-se-ed.com/ws/Storage/Originals/978616/560/9786165601030L.jpg?h=01c01e15f91313cfcf22ed82c05917b6" alt="book" width="250" height="300">
             <!-- <img ng-src="{{book.book_image}}" routerLinkActive="active" routerLink="/detail/{{book.id}}"> -->
         </div>
     </mat-grid-tile>
     <mat-grid-tile>
         <div ng-init="myVar = 'pic_angular.jpg'">
             <p>อันดับ 3</p>
+            <img src="https://images-se-ed.com/ws/Storage/Originals/978616/560/9786165600774L.jpg?h=e7a378a0a6f97824532cf6e0d08246f6" alt="book" width="250" height="300">
             <!-- <img ng-src="{{book.book_image}}" routerLinkActive="active" routerLink="/detail/{{book.id}}"> -->
         </div>
     </mat-grid-tile>
@@ -46,65 +31,21 @@
 
 <h1 style="text-align: center;"> Search </h1>
 
-<body>
-    <div id="search-component">
-        <span class="p-input-icon-left">
-            <i class="pi pi-search"></i>
-            <!-- <input #searchBox type="text" pInputText placeholder="enter name" (input)="search(searchBox.value)" /> -->
-        </span>
-        <br>
-        <br>
-        <div class="search-result">
-            <!-- <div class="search-result" *ngFor="let book of books$ | async"> -->
-            <!-- <a routerLink="/edit/{{book.id}}"> -->
-            <span class="bookbox">
-                <!-- <img src="{{book.image}}" style="width: 200px;height: 200px;"> <br> {{book.name}} -->
-            </span>
-            <!-- </a> -->
+<div class="books-menu">
+    <!-- <a *ngFor="let book of books" routerLink="/detail/{{book.id}}"> -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <!-- <img src="{{book.book_url}}"><br> -->
+          </div>
+          <div class="flip-card-back">
+            <!-- <br><i><u>{{book.book_name}}</u></i><br>
+            <p>ผู้แต่ง : {{book.book_writer}}</p>
+            <p>เรื่องย่อ : {{book.book_detail}}</p><br>
+            <p>ราคา : {{book.book_price}}</p><br><br><br> -->
+          </div>
         </div>
-    </div>
-    <!-- </div> -->
-</body>
-<mat-grid-list cols="5" >
-    <mat-grid-tile>
-    <div ng-init="myVar = 'pic_angular.jpg'">
-        <!-- <img ng-src="{{myVar}}"> -->
-    </div>
-    <div routerLink="/detail">
-        <mat-icon>pageview</mat-icon>
-    </div>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <div ng-init="myVar = 'pic_angular.jpg'">
-            <!-- <img ng-src="{{myVar}}"> -->
-        </div>
-        <div routerLink="/detail">
-            <mat-icon>pageview</mat-icon>
-        </div>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <div ng-init="myVar = 'pic_angular.jpg'">
-            <!-- <img ng-src="{{myVar}}"> -->
-        </div>
-        <div routerLink="/detail">
-            <mat-icon>pageview</mat-icon>
-        </div>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <div ng-init="myVar = 'pic_angular.jpg'">
-            <!-- <img ng-src="{{myVar}}"> -->
-        </div>
-        <div routerLink="/detail">
-            <mat-icon>pageview</mat-icon>
-        </div>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <div ng-init="myVar = 'pic_angular.jpg'">
-            <!-- <img ng-src="{{myVar}}"> -->
-        </div>
-        <div routerLink="/detail">
-            <mat-icon>pageview</mat-icon>
-        </div>
-    </mat-grid-tile>
-
-</mat-grid-list>
+      </div>
+    <!-- </a> -->
+  </div>
+  <div style="padding:15px 10px" id="homesearch"></div><br><br><br>
