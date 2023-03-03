@@ -1,5 +1,4 @@
-
-    <!-- <ng-template class="header">
+<!-- <ng-template class="header">
         <h1>หนังสือยอดนิยม</h1>
     </ng-template>
     <ng-template let-product pTemplate="item">
@@ -18,29 +17,63 @@
         </div>
     </ng-template> -->
 <div class="head">
-    <p>หนังสือยอดนิยม</p>
+    <span>หนังสือยอดนิยม</span>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
-
+<mat-grid-list cols="3">
+    <mat-grid-tile>
+        <div ng-init="myVar = 'pic_angular.jpg'">
+            <p>อันดับ 1</p>
+            <!-- <img ng-src="{{book.book_image}}" routerLinkActive="active" routerLink="/detail/{{book.id}}"> -->
+            <img ng-scr="https://storage.naiin.com/system/application/bookstore/resource/product/202111/536298/1000244626_front_XXL.jpg?imgname=%E0%B8%AA%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3-%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%A1-2">
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div ng-init="myVar = 'pic_angular.jpg'">
+            <p>อันดับ 2</p>
+            <!-- <img ng-src="{{book.book_image}}" routerLinkActive="active" routerLink="/detail/{{book.id}}"> -->
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div ng-init="myVar = 'pic_angular.jpg'">
+            <p>อันดับ 3</p>
+            <!-- <img ng-src="{{book.book_image}}" routerLinkActive="active" routerLink="/detail/{{book.id}}"> -->
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
 <h1 style="text-align: center;"> Search </h1>
+
+
 
 <body>
     <div id="search-component">
         <span class="p-input-icon-left">
             <i class="pi pi-search"></i>
-            <input #searchBox type="text" pInputText placeholder="enter name" (input)="search(searchBox.value)" />
+            <!-- <input #searchBox type="text" pInputText placeholder="enter name" (input)="search(searchBox.value)" /> -->
         </span>
         <br>
         <br>
         <div class="search-result">
-            <div class="search-result" *ngFor="let book of books$ | async">
-                <a routerLink="/edit/{{book.id}}">
-                    <span class="bookbox">
-                        <!-- <img src="{{book.image}}" style="width: 200px;height: 200px;"> <br> {{book.name}} -->
-                    </span>
-                </a>
-            </div>
+            <!-- <div class="search-result" *ngFor="let book of books$ | async"> -->
+            <!-- <a routerLink="/edit/{{book.id}}"> -->
+            <span class="bookbox">
+                <!-- <img src="{{book.image}}" style="width: 200px;height: 200px;"> <br> {{book.name}} -->
+            </span>
+            <!-- </a> -->
         </div>
     </div>
+    <!-- </div> -->
+</body>
+
+<body ng-app="">
+
+    <div ng-init="myVar = 'pic_angular.jpg'">
+        <h1>...</h1>
+        <!-- <img ng-src="{{myVar}}"> -->
+    </div>
+
+    <p></p>
+
 </body>
