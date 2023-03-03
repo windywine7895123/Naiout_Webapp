@@ -22,7 +22,7 @@
         </thead>
         <tbody>
             <tr *ngFor="let book of Books; let i = index">
-                <!-- <th scope="row">{{i+1}}</th>
+                <th scope="row">{{i+1}}</th>
                 <td>{{book.id}}</td>
                 <td>{{book.book_name}}</td>
                 <td>{{book.book_type}}</td>
@@ -33,7 +33,7 @@
                 <td class="text-center">
                     <button mat-flat-button color="primary" routerLink="/edit-book/{{book.id}}">แก้ไข</button>
                     <button mat-flat-button color="danger" (click)="delete(book.id, i)">ลบ</button>
-                </td> -->
+                </td>
             </tr>
         </tbody>
     </table>
