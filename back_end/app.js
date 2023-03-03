@@ -8,6 +8,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const mongoose = require('mongoose');
 const book = require('./routes/book');
+const cors = require('cors')
+
 
 mongoose.Promise = global.Promise;
 
@@ -21,6 +23,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // view engine setup
+app.use(cors())
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
