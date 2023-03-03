@@ -16,3 +16,7 @@ form {
 .form-horizontal {
     padding-left: 0%;
 }
+
+.col-sm-5 {
+    display: inline;
+}

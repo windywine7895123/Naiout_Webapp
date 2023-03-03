@@ -13,6 +13,8 @@ import { Location } from '@angular/common';
 })
 export class AddBookComponent implements OnInit {
 
+  book:any; //just test error
+
   bookForm: FormGroup;
  
 
