@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CrudService, Book } from '../service/crud.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  Books:any = [];
+  constructor(
+    private crudService: CrudService,
+    
+  ) { }
 
   ngOnInit(): void {
+    this.crudService.GetBooks().subscribe(res => {
+      console.log(res)
+      this.Books = res;
+    })
   }
 
 }

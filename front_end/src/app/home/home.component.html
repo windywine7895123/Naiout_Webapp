@@ -32,20 +32,20 @@
 <h1 style="text-align: center;"> Search </h1>
 
 <div class="books-menu">
-    <!-- <a *ngFor="let book of books" routerLink="/detail/{{book.id}}"> -->
+    <a *ngFor="let book of Books" routerLink="/detail/{{book.id}}">
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <!-- <img src="{{book.book_url}}"><br> -->
+            <img src="{{book.book_url}}"><br>
           </div>
           <div class="flip-card-back">
-            <!-- <br><i><u>{{book.book_name}}</u></i><br>
+            <br><i><u>{{book.book_name}}</u></i><br>
             <p>ผู้แต่ง : {{book.book_writer}}</p>
             <p>เรื่องย่อ : {{book.book_detail}}</p><br>
-            <p>ราคา : {{book.book_price}}</p><br><br><br> -->
+            <p>ราคา : {{book.book_price}}</p><br><br><br>
           </div>
         </div>
       </div>
-    <!-- </a> -->
+    </a>
   </div>
   <div style="padding:15px 10px" id="homesearch"></div><br><br><br>
