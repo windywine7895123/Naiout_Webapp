@@ -10,6 +10,7 @@ import { Router } from 'express';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/home' },
+  { path: 'home', component: HomeComponent },
   { path: 'detail', component: DetailComponent },
   { path: 'list', component: ListComponent },
   { path: 'add-book', component: AddBookComponent },
