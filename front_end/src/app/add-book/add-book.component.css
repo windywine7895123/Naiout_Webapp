@@ -30,6 +30,11 @@ button {
     margin-right: 20px;
 }
 
+#topic {
+    border-color: #5b3796;
+    border-width: 1.5px;
+}
+
 #back {
     color: #797979;
 }

@@ -12,3 +12,9 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
+
+#add {
+    border-color: #5b3796;
+    border-width: 1.5px;
+    color: #5b3796;
+}
