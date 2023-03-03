@@ -12,6 +12,8 @@ import { Location } from '@angular/common';
 })
 export class AddBookComponent implements OnInit {
 
+  book: any; //for test code
+
   bookForm: FormGroup;
  
 
