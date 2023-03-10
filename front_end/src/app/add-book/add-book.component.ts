@@ -12,7 +12,7 @@ import { Location } from '@angular/common';
 })
 export class AddBookComponent implements OnInit {
 
-  book: any; //for test code
+  // book: any; //for test code
 
   bookForm: FormGroup;
  
@@ -25,7 +25,7 @@ export class AddBookComponent implements OnInit {
 
   ) { 
     this.bookForm = this.formBuilder.group({
-      book_id: [''],
+      book_id:[''],
       book_name: [''],
       book_image: [''],
       book_type: [''], 
