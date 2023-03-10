@@ -15,19 +15,15 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.getBooks();
-    this.getTopBook();
   }
 
   getBooks(): void {
     this.crudService.GetBooks().subscribe(res => {
-      console.log(res)
       this.Books = res;
+      this.TopBook = this.Books.slice(0, 3);
+      console.log(this.Books);
+      console.log(this.TopBook);
     })
-  }
-
-  getTopBook(): void {
-    this.TopBook = this.Books.slice(0, 3);
-    console.log(this.TopBook);
   }
 
 }
