@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { CrudService } from '../service/crud.service';
 import { Book } from '../service/crud.service';
 
@@ -18,7 +17,7 @@ export class DetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.crudService.GetBook(this.book.book_id).subscribe(res => {
+    this.crudService.GetBook(this.book._id).subscribe(res => {
       console.log(res)
       this.book = res;
     })

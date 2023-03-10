@@ -32,7 +32,7 @@
                 <td>{{book.book_price}}</td>
                 <td class="text-center">
                     <button mat-flat-button color="primary" routerLink="/edit-book/{{book.book_id}}">แก้ไข</button>
-                    <button mat-flat-button color="danger" (click)="delete(book.book_id,i)">ลบ</button>
+                    <button mat-flat-button color="danger" (click)="delete(book._id,i)">ลบ</button>
                 </td>
             </tr>
         </tbody>

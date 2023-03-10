@@ -34,7 +34,7 @@ router.put('/edit-book/:id', (req, res, next) => {
     })
 })
 //delete
-router.delete('/delete-book/:book_id', (req, res, next) => {
+router.delete('/delete-book/:id', (req, res, next) => {
     Book.findByIdAndDelete(req.params.id, (err, post) => {
         if (err) return next(err);
         res.status(200).json({

@@ -19,10 +19,10 @@ export class ListComponent implements OnInit {
       this.Books = res;
     })
   }
-  delete(book_id: any, i: any) {
-    console.log(book_id)
+  delete(id: any, i: any) {
+    console.log(id)
       if( window.confirm('คุณต้องการจะลบใช่ไหม?')) 
-        this.crudService.deleteBook(book_id).subscribe((res) => {
+        this.crudService.deleteBook(id).subscribe((res) => {
           this.Books.splice(i, 1);
         })
   }

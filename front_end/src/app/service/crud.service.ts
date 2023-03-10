@@ -4,7 +4,7 @@ import { Observable, throwError } from 'rxjs';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 
 export class Book {
-  id!: String;
+  _id!: String;
   book_id!: Number;
   book_name!: String;
   book_price!: Number;
@@ -61,8 +61,8 @@ export class CrudService {
   }
 
   //Delete
-  deleteBook(book_id: any): Observable<any>{
-    let API_URL = `${this.REST_API}/delete-book/${book_id}`;
+  deleteBook(id: any): Observable<any>{
+    let API_URL = `${this.REST_API}/delete-book/${id}`;
     return this.httpClient.delete(API_URL, {headers: this.httpHeaders})
       .pipe(
         catchError(this.handleError)
