@@ -25,6 +25,7 @@ export class AddBookComponent implements OnInit {
 
   ) { 
     this.bookForm = this.formBuilder.group({
+      book_id: [''],
       book_name: [''],
       book_image: [''],
       book_type: [''], 

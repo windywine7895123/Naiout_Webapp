@@ -18,7 +18,7 @@ export class DetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.crudService.GetBook(this.book.id).subscribe(res => {
+    this.crudService.GetBook(this.book.book_id).subscribe(res => {
       console.log(res)
       this.book = res;
     })
