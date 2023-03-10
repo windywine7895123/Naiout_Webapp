@@ -19,6 +19,7 @@ import { MatInputModule } from '@angular/material/input';
 import { PreviewBookComponent } from './preview-book/preview-book.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MatCardModule } from '@angular/material/card';
     AddBookComponent,
     ListComponent,
     EditBookComponent,
-    PreviewBookComponent
+    PreviewBookComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
