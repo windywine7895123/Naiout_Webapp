@@ -9,16 +9,25 @@ import { CrudService } from '../service/crud.service';
 export class HomeComponent implements OnInit {
 
   Books:any = [];
-  constructor(
-    private crudService: CrudService,
-    
-  ) { }
+  TopBook:any = [];
+
+  constructor(private crudService: CrudService) { }
 
   ngOnInit(): void {
+    this.getBooks();
+    this.getTopBook();
+  }
+
+  getBooks(): void {
     this.crudService.GetBooks().subscribe(res => {
       console.log(res)
       this.Books = res;
     })
+  }
+
+  getTopBook(): void {
+    this.TopBook = this.Books.slice(0, 3);
+    console.log(this.TopBook);
   }
 
 }

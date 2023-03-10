@@ -13,4 +13,9 @@ body {
 button {
     color: #6A43A9;
     position: relative;
+    background-color: aliceblue;
+}
+
+button :hover {
+    color: aliceblue;
 }
