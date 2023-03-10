@@ -10,15 +10,15 @@ import { Router } from '@angular/router'
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  email: string = '' ;
-  password: string = '';
+  email: string = 'Than@mail.com' ;
+  password: string = 'th1234';
 
   isLogin: boolean = true;
   errorMessage: string = "";
   
   constructor(private router: Router, private http: HttpClient) { }
-  
-  login(){
+
+  onSubmit(): any {
     console.log(this.email);
     console.log(this.password);
 
@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
         console.log(resultData);
         if(resultData.status)
         {
-            this.router.navigateByUrl('list');
+            this.router.navigateByUrl('/list');
         }
         else
         { alert("Incorrext Email or Password");
