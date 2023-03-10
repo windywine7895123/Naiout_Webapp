@@ -11,7 +11,7 @@ import { Router } from 'express';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/home' },
   { path: 'home', component: HomeComponent },
-  { path: 'detail', component: DetailComponent },
+  { path: 'detail/:id', component: DetailComponent },
   { path: 'list', component: ListComponent },
   { path: 'add-book', component: AddBookComponent },
   { path: 'edit-book/:id', component: DetailComponent },

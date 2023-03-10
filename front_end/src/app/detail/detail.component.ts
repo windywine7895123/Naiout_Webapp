@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-// import { CrudService } from '../service/crud.service';
-// import { Book } from '../service/crud.service';
+import { CrudService } from '../service/crud.service';
+import { Book } from '../service/crud.service';
 
 @Component({
   selector: 'app-detail',
@@ -12,16 +12,16 @@ import { Component, OnInit } from '@angular/core';
 export class DetailComponent implements OnInit {
 
   constructor(
-    // private crudService: CrudService,
-    // public book: Book
+    private crudService: CrudService,
+    public book: Book
 
   ) { }
 
   ngOnInit(): void {
-    // this.crudService.GetBook(this.book.id).subscribe(res => {
-    //   console.log(res)
-    //   this.book = res;
-    // })
+    this.crudService.GetBook(this.book.id).subscribe(res => {
+      console.log(res)
+      this.book = res;
+    })
   }
 
 }
