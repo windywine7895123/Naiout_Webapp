@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CrudService } from '../service/crud.service';
 
+
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -18,10 +19,10 @@ export class ListComponent implements OnInit {
       this.Books = res;
     })
   }
-  delete(id: any, i: any) {
-    console.log(id)
+  delete(book_id: any, i: any) {
+    console.log(book_id)
       if( window.confirm('คุณต้องการจะลบใช่ไหม?')) 
-        this.crudService.deleteBook(id).subscribe((res) => {
+        this.crudService.deleteBook(book_id).subscribe((res) => {
           this.Books.splice(i, 1);
         })
   }
