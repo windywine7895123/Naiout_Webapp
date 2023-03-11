@@ -31,7 +31,7 @@
                 <td>{{book.book_item}}</td>
                 <td>{{book.book_price}}</td>
                 <td class="text-center">
-                    <button mat-flat-button color="primary" routerLink="/edit-book/{{book.book_id}}">แก้ไข</button>
+                    <button mat-flat-button color="primary" routerLink="/edit-book/{{book._id}}">แก้ไข</button>
                     <button mat-flat-button color="danger" (click)="delete(book._id,i)">ลบ</button>
                 </td>
             </tr>
