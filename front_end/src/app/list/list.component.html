@@ -24,7 +24,11 @@
         <tbody>
             <tr *ngFor="let book of Books; let i = index">
                 <th scope="row">{{i+1}}</th>
-                <td class="id">{{book.book_id}}</td>
+                <td class="id">
+                    <a routerLink="/detail/{{book._id}}">
+                        {{book._id}}
+                    </a>
+                </td>
                 <td class="name">{{book.book_name}}</td>
                 <td class="type">{{book.book_type}}</td>
                 <td class="writer">{{book.book_writer}}</td>

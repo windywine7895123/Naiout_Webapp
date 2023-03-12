@@ -1,5 +1,5 @@
 import { Component, OnInit, NgZone } from '@angular/core';
-import {Router,ActivatedRoute} from '@angular/router';
+import { Router,ActivatedRoute } from '@angular/router';
 import { CrudService } from '../service/crud.service';
 import { FormGroup, FormBuilder } from '@angular/forms';
 
@@ -47,6 +47,7 @@ export class EditBookComponent implements OnInit {
       book_detail: [''],
     })
   }
+
   ngOnInit(): void {
       
   }
@@ -57,5 +58,6 @@ export class EditBookComponent implements OnInit {
     }
     )
   }
+
   }
   

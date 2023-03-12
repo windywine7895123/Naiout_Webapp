@@ -27,7 +27,7 @@
 </mat-grid-list> -->
 
 <div class="top-books">
-  <a *ngFor="let book of TopBook" routerLink="/detail/{{Books.id}}">
+  <a *ngFor="let book of TopBook" routerLink="/detail/{{book._id}}">
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
@@ -38,7 +38,7 @@
           <p>ผู้แต่ง : {{book.book_writer}}</p>
           <p>ประเภท : {{book.book_type}}</p>
           <p>สำนักพิมพ์ : {{book.book_publisher}}</p>
-          <p>ราคา : {{book.book_price}}</p><br><br><br>
+          <p>ราคา : {{book.book_price}} ฿</p><br><br><br>
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@
 </div>
 
 <div class="books-menu">
-    <a *ngFor="let book of Books" routerLink="/detail/{{Books.id}}">
+    <a *ngFor="let book of Books" routerLink="/detail/{{book._id}}">
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -61,7 +61,7 @@
             <p>ผู้แต่ง : {{book.book_writer}}</p>
             <p>ประเภท : {{book.book_type}}</p>
             <p>สำนักพิมพ์ : {{book.book_publisher}}</p>
-            <p>ราคา : {{book.book_price}}</p><br><br><br>
+            <p>ราคา : {{book.book_price}} ฿</p><br><br><br>
           </div>
         </div>
       </div>

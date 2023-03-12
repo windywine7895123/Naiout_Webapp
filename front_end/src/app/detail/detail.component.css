@@ -1,4 +1,4 @@
-.col-md-4 {
+/* .col-md-4 {
     line-height: 35px;
     font-size: 15px;
 }
@@ -7,4 +7,45 @@
 }
 p {
     font-size: 25px;
+} */
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    display: inline;
+}
+
+.form-control {
+    width: 70%;
+    border-color: #5b3796;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.form-horizontal {
+    padding-left: 0%;
+}
+
+.col-sm-5 {
+    display: flex; 
+}
+
+p {
+    margin-top: 7px;
+    margin-left: 4%;
+}
+
+button {
+    margin-right: 20px;
+}
+
+#topic {
+    border-color: #5b3796;
+    border-width: 1.5px;
+}
+
+#back {
+    color: #797979;
 }

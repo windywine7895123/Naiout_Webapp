@@ -19,7 +19,7 @@ table {
     color: #5b3796;
 }
 
-.id, .item, .price, .edit {
+.item, .price, .edit {
     text-align: center;
 }
 

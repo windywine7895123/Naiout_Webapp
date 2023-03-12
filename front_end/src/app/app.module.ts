@@ -8,6 +8,9 @@ import { DetailComponent } from './detail/detail.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { ListComponent } from './list/list.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
+import { LoginComponent } from './login/login.component';
+import { Book } from './service/crud.service';
+import { PreviewBookComponent } from './preview-book/preview-book.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,10 +19,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { PreviewBookComponent } from './preview-book/preview-book.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
-import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -46,7 +48,7 @@ import { LoginComponent } from './login/login.component';
     MatGridListModule,
     MatCardModule,
   ],
-  providers: [],
+  providers: [Book],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
