@@ -37,9 +37,8 @@ mat-icon {
 }
 
 p {
-    padding: 10px;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
 }
 
@@ -84,7 +83,8 @@ img {
 }
   
 .flip-card-back {
-    background-color: #5ba1ad;
+    background-color: #5d5b5b;
     color: white;
     transform: rotateY(180deg);
+    padding: 3%;
 }

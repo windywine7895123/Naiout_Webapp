@@ -18,3 +18,12 @@ table {
     border-width: 1.5px;
     color: #5b3796;
 }
+
+.id, .item, .price, .edit {
+    text-align: center;
+}
+
+.delete {
+    color: #fe5757;
+    text-align: center;
+}

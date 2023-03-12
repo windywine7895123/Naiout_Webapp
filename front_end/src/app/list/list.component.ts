@@ -19,6 +19,7 @@ export class ListComponent implements OnInit {
       this.Books = res;
     })
   }
+
   delete(id: any, i: any) {
     console.log(id)
       if( window.confirm('คุณต้องการจะลบใช่ไหม?')) 

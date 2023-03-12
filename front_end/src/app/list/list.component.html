@@ -17,25 +17,28 @@
                 <th scope="col">สำนักพิมพ์</th>
                 <th scope="col">จำนวน</th>
                 <th scope="col">ราคา</th>
-                <th scope="col">หมายเหตุ</th>
+                <th scope="col">แก้ไข</th>
+                <th scope="col">ลบ</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let book of Books; let i = index">
                 <th scope="row">{{i+1}}</th>
-                <td>{{book.book_id}}</td>
-                <td>{{book.book_name}}</td>
-                <td>{{book.book_type}}</td>
-                <td>{{book.book_writer}}</td>
-                <td>{{book.book_publisher}}</td>
-                <td>{{book.book_item}}</td>
-                <td>{{book.book_price}}</td>
-                <td class="text-center">
-                    <button mat-flat-button color="primary" routerLink="/edit-book/{{book._id}}">แก้ไข</button>
-                    <button mat-flat-button color="danger" (click)="delete(book._id,i)">ลบ</button>
+                <td class="id">{{book.book_id}}</td>
+                <td class="name">{{book.book_name}}</td>
+                <td class="type">{{book.book_type}}</td>
+                <td class="writer">{{book.book_writer}}</td>
+                <td class="publisher">{{book.book_publisher}}</td>
+                <td class="item">{{book.book_item}}</td>
+                <td class="price">{{book.book_price}}</td>
+                <td class="edit">
+                    <mat-icon routerLink="/edit-book/{{book._id}}">edit</mat-icon>
+                </td>
+                <td class="delete">
+                    <mat-icon (click)="delete(book._id,i)">cancel</mat-icon>
                 </td>
             </tr>
         </tbody>
     </table>
-
+      
 </div>
