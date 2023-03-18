@@ -1,18 +1,29 @@
 --------อธิบายการทำงาน---------------
 
 Link video : https://youtu.be/79MSFEISEzA
+
 เป็น web application ใช้สำหรับการ stock หนังสือ 
 แบ่งการทำงานได้เป็น 3 ส่วน  
     front-end ใช้เป็น Angular.js framework => แสดง User interface ของ web application ใช้ประโยชน์ของ angular.js ในการเขียน application แบบแยก component ตามแต่ละการทำงาน
+
     -   add-book : ฟอร์มที่ใช้สำหรับการเพิ่มรายการหนังสือใหม่
+    
     -   detail : หน้าแสดงายละเอียดของหนังสือแต่ละเล่ม
+    
     -   edit-book : หน้าฟอร์มสำหรับแก้ไขหนังสือแต่ละเล่ม
+    
     -   home : หน้าหลักที่ใช้ในการแสดงเว็บไซต์ หน้าแรกแสดงรายชื่อ/รูปภาพหนังสือยอดนิยม, หนังสือยอดนิยม
+    
     -   list : หน้าสำหรับการแสดงตารางรายชื่อหนังสือทั้งหมด
+    
     -   login : หน้าที่ใช้ในการเข้าสู่ระบบ Admin
+    
     -   preview-book : ใช้ในส่วนของการค้นหารายชื่อหนังสือ
+    
     -   service : กำหนดการดึงข้อมูลจาก back-end กำหนดการทำงานแต่ละฟังก์ชัน
+    
     -   app component : สำหรับแถบ nav-bar ของเว็บไซต์
+    
     back-end ใช้เป็น Express.js framework =>  REST api ( GET PUT POST DELETE )
     database เป็น MongoDB express
 
