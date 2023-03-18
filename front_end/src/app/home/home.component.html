@@ -2,30 +2,6 @@
     <span><u>หนังสือยอดนิยม</u></span>
 </div>
 
-<!-- <mat-grid-list cols="3">
-    <mat-grid-tile>
-        <div ng-init="myVar = 'pic_angular.jpg'">
-            <p><i>อันดับ 1</i></p>
-            <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202111/536298/1000244626_front_XXL.jpg?imgname=%E0%B8%AA%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%B2%E0%B8%99%E0%B8%9E%E0%B8%A3-%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%A1-2" alt="book" width="250" height="300">
-            <img src="{{Books.book_image}}" routerLinkActive="active" routerLink="/detail/{{Books.id}}">
-        </div>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <div ng-init="myVar = 'pic_angular.jpg'">
-            <p><i>อันดับ 2</i></p>
-            <img src="https://images-se-ed.com/ws/Storage/Originals/978616/560/9786165601030L.jpg?h=01c01e15f91313cfcf22ed82c05917b6" alt="book">
-            <img src="{{Books.book_image}}" routerLinkActive="active" routerLink="/detail/{{Books.id}}">
-        </div>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <div ng-init="myVar = 'pic_angular.jpg'">
-            <p><i>อันดับ 3</i></p>
-            <img src="https://images-se-ed.com/ws/Storage/Originals/978616/560/9786165600774L.jpg?h=e7a378a0a6f97824532cf6e0d08246f6" alt="book">
-            <img src="{{Books.book_image}}" routerLinkActive="active" routerLink="/detail/{{Books.id}}">
-        </div>
-    </mat-grid-tile>
-</mat-grid-list> -->
-
 <div class="top-books">
   <a *ngFor="let book of TopBook" routerLink="/detail/{{book._id}}">
     <div class="flip-card">
@@ -46,7 +22,8 @@
 </div>
 
 <div class="search">
-  <span><u>ค้นหาหนังสือ</u></span>
+  <span><u>ค้นหาหนังสือ</u></span><br>
+  <app-preview-book></app-preview-book>
 </div>
 
 <div class="books-menu">

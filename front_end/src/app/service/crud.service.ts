@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { catchError, map } from 'rxjs/operators';
-import { Observable, throwError } from 'rxjs';
+import { catchError, map, tap } from 'rxjs/operators';
+import { Observable, throwError, of } from 'rxjs';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 
 export class Book {
   _id!: String;
@@ -84,5 +85,12 @@ export class CrudService {
     }
     console.log(errorMessage);
     return errorMessage;
+  }
+
+  searchBooks(term: string): Observable<Book[]> {
+    if (!term.trim()) {
+      return of([]);
+    }
+    return this.httpClient.get<Book[]>(`${this.REST_API}search/?_book_name=${term}`).pipe()
   }
 }
