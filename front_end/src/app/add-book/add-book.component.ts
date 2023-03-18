@@ -2,7 +2,6 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import { Router } from '@angular/router'
 import { CrudService } from '../service/crud.service';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import { Location } from '@angular/common';
 
 
 @Component({
