@@ -1,5 +1,5 @@
 --------อธิบายการทำงาน---------------
-
+Link video : https://youtu.be/79MSFEISEzA
 เป็น web application ใช้สำหรับการ stock หนังสือ 
 แบ่งการทำงานได้เป็น 3 ส่วน  
     front-end ใช้เป็น Angular.js framework => แสดง User interface ของ web application ใช้ประโยชน์ของ angular.js ในการเขียน application แบบแยก component ตามแต่ละการทำงาน
