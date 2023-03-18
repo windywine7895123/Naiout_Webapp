@@ -1,6 +1,6 @@
 --------อธิบายการทำงาน---------------
 
-Link video : https://youtu.be/79MSFEISEzA
+Link Demo video : https://youtu.be/79MSFEISEzA
 
 เป็น web application ใช้สำหรับการ stock หนังสือ 
 แบ่งการทำงานได้เป็น 3 ส่วน  
