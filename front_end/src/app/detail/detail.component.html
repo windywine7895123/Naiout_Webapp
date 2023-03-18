@@ -1,60 +1,14 @@
-<!-- <div class="book">
-    <div class="container">
-        <div class="book-header">
-            <p>รายละเอียด</p>
-        </div>
-    </div>
-    <div class="container">
-    <div class='row'>
-        <div class="col-md-8">
-            <div class='row'>
-                <div class='col-md-4'>&emsp;ชื่อหนังสือ</div>
-                <div class='col-md-8'>{{book.book_name}}</div>
-            </div> 
-            <div class='row'>
-                <div class='col-md-4'>&emsp;ประเภทหนังสือ</div>
-                <div class='col-md-8'>{{book.book_type}}</div>
-            </div> 
-            <div class='row'>
-                <div class='col-md-4'>&emsp;ชื่อผู้เขียน</div>
-                <div class='col-md-8'>{{book.book_writer}}</div>
-            </div> 
-            <div class='row'>
-                <div class='col-md-4'>&emsp;สำนักพิมพ์</div>
-                <div class='col-md-8'>{{book.book_publisher}}</div>
-            </div>
-            <div class='row'>
-                <div class='col-md-4'>&emsp;จำนวน</div>
-                <div class='col-md-8'>{{book.book_item}}</div>
-            </div> 
-            <div class='row'>
-                <div class='col-md-4'>&emsp;ราคา</div>
-                <div class='col-md-8'>{{book.book_price}}</div>
-            </div> 
-            <div class='row'>
-                <div class='col-md-4'>&emsp;เรื่องย่อ</div>
-                <div class='col-md-8'>{{book.book_detail}}</div>
-            </div> 
-        </div>
-    </div>
-    </div>
-</div> -->
-
 <button type="button" class="btn btn-default">รายละเอียดของหนังสือ</button>
 <button type="button" class="btn btn-default" id="back" routerLinkActive="active" (click)="goBack()">ย้อนกลับ</button>
 
-<!-- <div class="preview">
-  <app-preview-book></app-preview-book>
-</div> -->
-
 <form class="form-horizontal" [formGroup]="dataForm">
   
-  <div class="form-group">
+  <!-- <div class="form-group">
     <label class="col-sm-2 control-label">รหัสหนังสือ</label>
     <div class="col-sm-7">
       <input class="form-control" formControlName="book_id" required type="text">
     </div>
-  </div>
+  </div> -->
 
   <div class="form-group">
     <label class="col-sm-2 control-label">ชื่อหนังสือ</label>
